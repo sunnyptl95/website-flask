@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Walli Want</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<header>
+    <h1 class="glow-title">Walli Want</h1>
+</header>
+
+<main class="wallpaper-detail">
+    <img src="{{ url_for('static', filename='images/' + wallpaper.image) }}" alt="Wallpaper">
+
+    <a href="{{ url_for('static', filename='images/' + wallpaper.image) }}" download class="download-btn">Download</a>
+</main>
+<footer>
+    <p>&copy; 2025 Wallpaper Hub. All rights reserved.</p>
+    <p>
+        <a href="#" target="_blank">Instagram</a> |
+        <a href="https://t.me/JUST_7D5" target="_blank">Telegram</a>
+    </p>
+</footer>
+
+</body>
+</html>
